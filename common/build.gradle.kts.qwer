@@ -22,6 +22,7 @@ kotlin {
     }
 
     jvm("android")
+    android("test")
 
     sourceSets["commonMain"].dependencies {
         implementation("org.jetbrains.kotlin:kotlin-stdlib-common")

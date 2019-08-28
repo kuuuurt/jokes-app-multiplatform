@@ -9,7 +9,7 @@ actual object JokesDatabaseDriver {
     actual var jokesDatabaseDriver: SqlDriver? = null
 
     fun createDriver(context: Context) {
-        jokesDatabaseDriver = AndroidSqliteDriver(JokesDatabase.Schema, context, "jokes.db")
+        jokesDatabaseDriver = AndroidSqliteDriver(JokesDatabase.Schema, context, "asdf.db")
     }
 }
 

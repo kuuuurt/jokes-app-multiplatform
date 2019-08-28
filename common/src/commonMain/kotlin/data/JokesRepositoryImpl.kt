@@ -4,8 +4,6 @@ import com.kurt.jokes.mobile.data.local.JokesLocalSource
 import com.kurt.jokes.mobile.data.remote.JokesRemoteSource
 import com.kurt.jokes.mobile.domain.entities.Joke
 import com.kurt.jokes.mobile.domain.repositories.JokesRepository
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 class JokesRepositoryImpl(
     private val jokesRemoteSource: JokesRemoteSource,
