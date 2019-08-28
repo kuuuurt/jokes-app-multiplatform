@@ -15,9 +15,8 @@
 		E8081AEE230C32BE00F58819 /* mppexampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8081AED230C32BE00F58819 /* mppexampleTests.swift */; };
 		E8081AF9230C32BE00F58819 /* mppexampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8081AF8230C32BE00F58819 /* mppexampleUITests.swift */; };
 		E81CF7802314D91300F4076A /* JokesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CF77F2314D91300F4076A /* JokesTableViewCell.swift */; };
-		E81CF7882316163B00F4076A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E81CF7872316163B00F4076A /* libsqlite3.tbd */; };
-		E895910E230E59CC00736CC6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E895910D230E59CC00736CC6 /* Common.framework */; };
-		E895910F230E59CC00736CC6 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E895910D230E59CC00736CC6 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8ABE95C23162B9C005FC3B0 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8ABE95B23162B9C005FC3B0 /* Common.framework */; };
+		E8ABE95D23162B9C005FC3B0 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8ABE95B23162B9C005FC3B0 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E895910F230E59CC00736CC6 /* Common.framework in Embed Frameworks */,
+				E8ABE95D23162B9C005FC3B0 /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,8 +65,7 @@
 		E8081AF8230C32BE00F58819 /* mppexampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mppexampleUITests.swift; sourceTree = "<group>"; };
 		E8081AFA230C32BE00F58819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E81CF77F2314D91300F4076A /* JokesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesTableViewCell.swift; sourceTree = "<group>"; };
-		E81CF7872316163B00F4076A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		E895910D230E59CC00736CC6 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Common.framework; path = "../../common/build/xcode-frameworks/Common.framework"; sourceTree = "<group>"; };
+		E8ABE95B23162B9C005FC3B0 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Common.framework; path = "../common/build/xcode-frameworks/Common.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E81CF7882316163B00F4076A /* libsqlite3.tbd in Frameworks */,
-				E895910E230E59CC00736CC6 /* Common.framework in Frameworks */,
+				E8ABE95C23162B9C005FC3B0 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +97,11 @@
 		E8081ACC230C32BD00F58819 = {
 			isa = PBXGroup;
 			children = (
-				E895910D230E59CC00736CC6 /* Common.framework */,
+				E8ABE95B23162B9C005FC3B0 /* Common.framework */,
 				E8081AD7230C32BD00F58819 /* JokesApp */,
 				E8081AEC230C32BE00F58819 /* JokesAppTests */,
 				E8081AF7230C32BE00F58819 /* JokesAppUITests */,
 				E8081AD6230C32BD00F58819 /* Products */,
-				E81CF7862316163B00F4076A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,14 +145,6 @@
 				E8081AFA230C32BE00F58819 /* Info.plist */,
 			);
 			path = JokesAppUITests;
-			sourceTree = "<group>";
-		};
-		E81CF7862316163B00F4076A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E81CF7872316163B00F4076A /* libsqlite3.tbd */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +291,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/../../\"\n./gradlew :common:packForXcode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+			shellScript = "cd \"$SRCROOT/../\"\n./gradlew :common:packForXcode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -491,7 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
-					"${PROJECT_DIR}/../../common/build/xcode-frameworks",
+					"${PROJECT_DIR}/../common/build/xcode-frameworks",
 					"${PROJECT_DIR}",
 					"${inherited}",
 				);
@@ -513,7 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
-					"${PROJECT_DIR}/../../common/build/xcode-frameworks",
+					"${PROJECT_DIR}/../common/build/xcode-frameworks",
 					"${PROJECT_DIR}",
 					"${inherited}",
 				);

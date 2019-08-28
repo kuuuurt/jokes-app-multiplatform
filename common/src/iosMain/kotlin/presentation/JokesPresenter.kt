@@ -20,9 +20,7 @@ class JokesPresenter(
     fun getJokes() {
         presenterScope.launch(CoroutineExceptionHandler { _, throwable ->
             println("Presenter Error")
-            println(throwable.message)
         }) {
-            println("Received")
             val jokes = getJokes.invoke()
             jokesView.showJokes(jokes)
         }

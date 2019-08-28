@@ -9,7 +9,12 @@
 import UIKit
 import Common
 
-class ViewController: UITableViewController,JokesView {
+class ViewController: UITableViewController, JokesView {
+    func showJokes(jokes: [Joke]) {
+        self.jokes += jokes
+        tableView.reloadData()
+    }
+    
     var jokes = [Joke]()
     
     override func viewDidLoad() {
@@ -19,11 +24,6 @@ class ViewController: UITableViewController,JokesView {
         let presenter = JokesPresenter(jokesView: self, getJokes: GetJokes.Companion.init().create())
         
         presenter.getJokes()
-    }
-
-    func showJokes(jokes: [Joke]) {
-        self.jokes += jokes
-        tableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

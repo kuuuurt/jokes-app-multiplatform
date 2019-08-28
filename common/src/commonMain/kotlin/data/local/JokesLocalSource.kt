@@ -1,11 +1,11 @@
 package com.kurt.jokes.mobile.data.local
 
+import com.kurt.jokes.JokeDb
 import com.kurt.jokes.JokesDatabase
 import com.kurt.jokes.mobile.domain.entities.Joke
-import com.kurt.mppexample.Jokes
 import com.squareup.sqldelight.db.SqlDriver
 
-object JokesLocalSource {
+class JokesLocalSource {
     var driver: SqlDriver? = JokesDatabaseDriver.jokesDatabaseDriver
 
     private val db by lazy {
@@ -27,7 +27,7 @@ object JokesLocalSource {
     fun saveJokes(jokes: List<Joke>) {
         jokes.forEach {
             db.insertJoke(
-                Jokes.Impl(
+                JokeDb.Impl(
                     id = it.id,
                     setup = it.setup,
                     punchline = it.punchline,

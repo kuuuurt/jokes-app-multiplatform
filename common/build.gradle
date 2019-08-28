@@ -6,7 +6,6 @@ apply plugin: "com.squareup.sqldelight"
 sqldelight {
     JokesDatabase {
         packageName = "com.kurt.jokes"
-        schemaOutputDirectory = file("src/main/sqldelight/databases")
     }
 }
 

@@ -1,4 +1,4 @@
-CREATE TABLE jokes (
+CREATE TABLE JokeDb (
     id INTEGER NOT NULL,
     setup TEXT NOT NULL,
     punchline TEXT NOT NULL,
@@ -6,8 +6,8 @@ CREATE TABLE jokes (
 );
 
 getAllJokes:
-SELECT * FROM jokes;
+SELECT * FROM JokeDb;
 
 insertJoke:
-INSERT INTO jokes (id, setup, punchline, type)
+INSERT INTO JokeDb (id, setup, punchline, type)
 VALUES ?;

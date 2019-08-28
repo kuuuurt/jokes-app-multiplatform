@@ -10,6 +10,6 @@ class GetJokes(private val jokesRepository: JokesRepository) {
     suspend operator fun invoke() = jokesRepository.getJokes()
 
     companion object {
-        fun create() = GetJokes(JokesRepositoryImpl(JokesRemoteSource(engine), JokesLocalSource))
+        fun create() = GetJokes(JokesRepositoryImpl(JokesRemoteSource(engine), JokesLocalSource()))
     }
 }
