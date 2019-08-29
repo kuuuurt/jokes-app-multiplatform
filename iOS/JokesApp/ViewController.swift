@@ -21,7 +21,7 @@ class ViewController: UITableViewController, JokesView {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let presenter = JokesPresenter(jokesView: self, getJokes: GetJokes.Companion.init().create())
+        let presenter = JokesPresenter(jokesView: self, getJokes: ServiceLocator.init().getJokes)
         
         presenter.getJokes()
     }

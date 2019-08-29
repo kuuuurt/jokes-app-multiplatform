@@ -80,10 +80,6 @@ kotlin {
                 implementation "com.squareup.sqldelight:runtime:$sqlDelightVersion"
             }
         }
-
-        androidMain {
-//            implementation("org.jetbrains.kotlin:kotlin-stdlib")
-        }
     }
 }
 
