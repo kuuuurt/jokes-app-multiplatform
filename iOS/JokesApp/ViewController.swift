@@ -10,19 +10,20 @@ import UIKit
 import Common
 
 class ViewController: UITableViewController, JokesView {
+    // MARK: Properties
+    var jokes = [Joke]()
+    
+    // MARK: JokesView
     func showJokes(jokes: [Joke]) {
         self.jokes += jokes
         tableView.reloadData()
     }
     
-    var jokes = [Joke]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        let presenter = JokesPresenter(jokesView: self, getJokes: ServiceLocator.init().getJokes)
-        
+        let presenter = JokesPresenter.init(jokesView: self, getJokes: ServiceLocator.init().getJokes)
+    
         presenter.getJokes()
     }
     
@@ -43,9 +44,17 @@ class ViewController: UITableViewController, JokesView {
         
         cell.txtSetup.text = joke.setup
         cell.txtPunchline.text = joke.punchline
+        cell.txtPunchline.isHidden = !joke.isPunchlineVisible
         
         return cell
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? JokesTableViewCell else {
+            fatalError("The cell is not an instance of JokesTableViewCell.")
+        }
+        jokes[indexPath.row].isPunchlineVisible = true
+        cell.txtPunchline.isHidden = false
+    }
 }
 

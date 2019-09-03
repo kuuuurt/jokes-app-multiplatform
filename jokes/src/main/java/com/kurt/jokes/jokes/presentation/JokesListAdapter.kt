@@ -31,14 +31,13 @@ class JokesListAdapter : ListAdapter<Joke, RecyclerView.ViewHolder>(
             val txtSetup = findViewById<TextView>(R.id.txt_setup)
             val txtPunchline = findViewById<TextView>(R.id.txt_punchline)
 
-            var isShown = false
-
             txtSetup.text = joke.setup
             txtPunchline.text = joke.punchline
+            txtPunchline.visibility = if (joke.isPunchlineVisible) View.VISIBLE else View.INVISIBLE
 
             setOnClickListener {
-                txtPunchline.visibility = if (isShown) View.GONE else View.VISIBLE
-                isShown = !isShown
+                joke.isPunchlineVisible = true
+                txtPunchline.visibility = View.VISIBLE
             }
         }
     }

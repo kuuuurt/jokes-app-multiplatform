@@ -8,4 +8,6 @@ data class Joke(
     val type: String,
     val setup: String,
     val punchline: String
-)
+) {
+    var isPunchlineVisible = false
+}

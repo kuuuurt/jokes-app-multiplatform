@@ -29,7 +29,7 @@
             app:layout_constraintTop_toBottomOf="@id/txt_setup"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
             tools:text="Joke Punchline"
-            android:visibility="gone"/>
+            android:visibility="invisible"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
