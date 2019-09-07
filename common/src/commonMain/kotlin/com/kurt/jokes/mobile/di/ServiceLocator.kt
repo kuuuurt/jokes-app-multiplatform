@@ -7,7 +7,7 @@ import com.kurt.jokes.mobile.data.remote.JokesRemoteSource
 import com.kurt.jokes.mobile.domain.repositories.JokesRepository
 import com.kurt.jokes.mobile.domain.usecases.GetJokes
 
-object ServiceLocator {
+class ServiceLocator {
     val jokesLocalSource = JokesLocalSource()
     val jokesRemoteSource = JokesRemoteSource(engine)
     val jokesRepository: JokesRepository = JokesRepositoryImpl(jokesRemoteSource, jokesLocalSource)

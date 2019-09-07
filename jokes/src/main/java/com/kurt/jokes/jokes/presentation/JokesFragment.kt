@@ -9,11 +9,15 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.kurt.jokes.commonandroid.presentation.JokesApplication
 import com.kurt.jokes.commonandroid.presentation.UiState
 import com.kurt.jokes.jokes.R
 
 class JokesFragment : Fragment(R.layout.fragment_jokes) {
-    private val viewModel: JokesViewModel by viewModels { JokesViewModelFactory() }
+    private val viewModel: JokesViewModel by viewModels {
+        val serviceLocator = (requireActivity().application as JokesApplication).serviceLocator
+        JokesViewModelFactory(serviceLocator.getJokes)
+    }
     private val jokesAdapter by lazy { JokesListAdapter() }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

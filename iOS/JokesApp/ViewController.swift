@@ -22,7 +22,8 @@ class ViewController: UITableViewController, JokesView {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let presenter = JokesPresenter.init(jokesView: self, getJokes: ServiceLocator.init().getJokes)
+        let serviceLocator = (UIApplication.shared.delegate as! AppDelegate).serviceLocator
+        let presenter = JokesPresenter.init(jokesView: self, getJokes: serviceLocator.getJokes)
     
         presenter.getJokes()
     }

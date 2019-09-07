@@ -51,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E52A09C72323E22D000AA086 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E8081AD5230C32BD00F58819 /* JokesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8081AD8230C32BD00F58819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8081ADA230C32BD00F58819 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E52A09C62323E22C000AA086 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E52A09C72323E22D000AA086 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E8081ACC230C32BD00F58819 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +111,7 @@
 				E8081AEC230C32BE00F58819 /* JokesAppTests */,
 				E8081AF7230C32BE00F58819 /* JokesAppUITests */,
 				E8081AD6230C32BD00F58819 /* Products */,
+				E52A09C62323E22C000AA086 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
