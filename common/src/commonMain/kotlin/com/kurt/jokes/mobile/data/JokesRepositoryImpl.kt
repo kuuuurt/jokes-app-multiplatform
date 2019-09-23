@@ -12,6 +12,8 @@ class JokesRepositoryImpl(
     override suspend fun getJokes(): List<Joke> {
         try {
             fetchJokes()
+        } catch (exception: Exception) {
+            println("Repository Error: ${exception.message}")
         } finally {
             return jokesLocalSource.getJokes()
         }

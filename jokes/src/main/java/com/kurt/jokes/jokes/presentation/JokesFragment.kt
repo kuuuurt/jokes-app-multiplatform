@@ -12,11 +12,11 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.kurt.jokes.commonandroid.presentation.JokesApplication
 import com.kurt.jokes.commonandroid.presentation.UiState
 import com.kurt.jokes.jokes.R
+import com.kurt.jokes.mobile.di.ServiceLocator
 
 class JokesFragment : Fragment(R.layout.fragment_jokes) {
     private val viewModel: JokesViewModel by viewModels {
-        val serviceLocator = (requireActivity().application as JokesApplication).serviceLocator
-        JokesViewModelFactory(serviceLocator.getJokes)
+        JokesViewModelFactory(ServiceLocator.getJokes)
     }
     private val jokesAdapter by lazy { JokesListAdapter() }
 
