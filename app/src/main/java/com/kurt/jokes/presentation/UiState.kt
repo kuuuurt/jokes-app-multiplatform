@@ -1,4 +1,4 @@
-package com.kurt.jokes.commonandroid.presentation
+package com.kurt.jokes.presentation
 
 sealed class UiState<out T> {
     class Success<out T>(val data: T) : UiState<T>()

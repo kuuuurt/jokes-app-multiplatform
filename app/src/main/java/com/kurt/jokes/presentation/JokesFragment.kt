@@ -1,4 +1,4 @@
-package com.kurt.jokes.jokes.presentation
+package com.kurt.jokes.presentation
 
 import android.os.Bundle
 import android.view.View
@@ -9,9 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.kurt.jokes.commonandroid.presentation.JokesApplication
-import com.kurt.jokes.commonandroid.presentation.UiState
-import com.kurt.jokes.jokes.R
+import com.kurt.jokes.R
 import com.kurt.jokes.mobile.di.ServiceLocator
 
 class JokesFragment : Fragment(R.layout.fragment_jokes) {

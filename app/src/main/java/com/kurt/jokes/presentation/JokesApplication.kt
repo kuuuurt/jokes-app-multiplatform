@@ -1,4 +1,4 @@
-package com.kurt.jokes.commonandroid.presentation
+package com.kurt.jokes.presentation
 
 import android.app.Application
 import com.kurt.jokes.mobile.data.local.JokesDatabaseDriver

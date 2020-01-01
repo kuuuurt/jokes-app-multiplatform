@@ -1,2 +1,2 @@
 enableFeaturePreview("GRADLE_METADATA")
-include ":app", ":common", ':jokes', ':android'
+include ":app", ":common"

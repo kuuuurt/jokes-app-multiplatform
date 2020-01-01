@@ -1,4 +1,4 @@
-package com.kurt.jokes.jokes.presentation
+package com.kurt.jokes.presentation
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,8 +7,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.kurt.jokes.R
 import com.kurt.jokes.mobile.domain.entities.Joke
-import com.kurt.jokes.jokes.R
 
 class JokesListAdapter : ListAdapter<Joke, RecyclerView.ViewHolder>(
     object : DiffUtil.ItemCallback<Joke>() {

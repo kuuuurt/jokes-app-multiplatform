@@ -1,9 +1,10 @@
-package com.kurt.jokes
+package com.kurt.jokes.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.findNavController
+import com.kurt.jokes.R
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         val tlbMain = findViewById<Toolbar>(R.id.tlb_main)
         setSupportActionBar(tlbMain)
 
-        supportActionBar?.title = navController.currentDestination?.label ?: getString(R.string.app_name)
+        supportActionBar?.title = navController.currentDestination?.label ?: getString(
+            R.string.app_name
+        )
     }
 }
