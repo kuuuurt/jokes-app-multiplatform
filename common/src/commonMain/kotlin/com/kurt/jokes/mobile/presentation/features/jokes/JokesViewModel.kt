@@ -1,8 +1,10 @@
-package com.kurt.jokes.mobile.presentation
+package com.kurt.jokes.mobile.presentation.features.jokes
 
 import com.kurt.jokes.mobile.di.ServiceLocator
 import com.kurt.jokes.mobile.domain.entities.Joke
 import com.kurt.jokes.mobile.domain.usecases.GetJokes
+import com.kurt.jokes.mobile.presentation.models.UiState
+import com.kurt.jokes.mobile.presentation.base.BaseViewModel
 import com.kurt.jokes.mobile.presentation.helpers.wrap
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -20,7 +22,11 @@ class JokesViewModel(private val getJokes: GetJokes) : BaseViewModel() {
 
     init {
         clientScope.launch(CoroutineExceptionHandler { _, throwable ->
-            _jokesState.offer(UiState.Error(throwable))
+            _jokesState.offer(
+                UiState.Error(
+                    throwable
+                )
+            )
         }) {
             _jokesState.offer(UiState.Loading)
             _jokes.offer(getJokes())
@@ -30,6 +36,9 @@ class JokesViewModel(private val getJokes: GetJokes) : BaseViewModel() {
 
     @ThreadLocal
     companion object {
-        fun create() = JokesViewModel(ServiceLocator.getJokes)
+        fun create() =
+            JokesViewModel(
+                ServiceLocator.getJokes
+            )
     }
 }

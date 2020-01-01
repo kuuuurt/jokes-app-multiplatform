@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView
 import com.kurt.jokes.R
-import com.kurt.jokes.mobile.presentation.JokesViewModel
-import com.kurt.jokes.mobile.presentation.JokesViewModelFactory
-import com.kurt.jokes.mobile.presentation.UiState
+import com.kurt.jokes.mobile.presentation.features.jokes.JokesViewModel
+import com.kurt.jokes.mobile.presentation.features.jokes.JokesViewModelFactory
+import com.kurt.jokes.mobile.presentation.models.UiState
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import java.io.Closeable
 

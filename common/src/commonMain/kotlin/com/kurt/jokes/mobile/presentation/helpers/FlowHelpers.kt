@@ -7,7 +7,7 @@ package com.kurt.jokes.mobile.presentation.helpers
  * @since 01/01/2020
  */
 
-import com.kurt.jokes.mobile.presentation.defaultDispatcher
+import com.kurt.jokes.mobile.presentation.base.defaultDispatcher
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.*
 import kotlinx.coroutines.flow.*

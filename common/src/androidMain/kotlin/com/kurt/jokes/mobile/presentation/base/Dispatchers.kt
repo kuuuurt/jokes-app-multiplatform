@@ -1,4 +1,4 @@
-package com.kurt.jokes.mobile.presentation
+package com.kurt.jokes.mobile.presentation.base
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers

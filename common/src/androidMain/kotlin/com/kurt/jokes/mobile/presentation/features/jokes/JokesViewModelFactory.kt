@@ -1,4 +1,4 @@
-package com.kurt.jokes.mobile.presentation
+package com.kurt.jokes.mobile.presentation.features.jokes
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

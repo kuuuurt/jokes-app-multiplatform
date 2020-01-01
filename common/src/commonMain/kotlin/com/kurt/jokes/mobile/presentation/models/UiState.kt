@@ -1,4 +1,4 @@
-package com.kurt.jokes.mobile.presentation
+package com.kurt.jokes.mobile.presentation.models
 
 sealed class UiState {
     object Success : UiState()
