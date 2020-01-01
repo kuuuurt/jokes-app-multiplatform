@@ -1,6 +1,5 @@
 package com.kurt.jokes.mobile.data.remote
 
-import com.kurt.jokes.mobile.data.engine
 import com.kurt.jokes.mobile.domain.entities.Joke
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.HttpClientEngine
