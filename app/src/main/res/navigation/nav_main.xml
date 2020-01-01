@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_main"
-    app:startDestination="@id/nav_jokes">
-    <include app:graph="@navigation/nav_jokes" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/jokes">
+
+    <fragment
+        android:id="@+id/jokes"
+        android:name="com.kurt.jokes.presentation.JokesFragment"
+        android:label="Jokes"
+        tools:layout="@layout/fragment_jokes" />
+
 </navigation>

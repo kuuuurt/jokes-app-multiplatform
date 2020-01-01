@@ -5,31 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swp_jokes"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_jokes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:padding="8dp"
         tools:visibility="visible"
-        android:visibility="invisible">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rec_jokes"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clipChildren="false"
-            android:clipToPadding="false"
-            android:padding="8dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/list_item_joke" />
-
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        android:visibility="invisible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_item_joke" />
 
     <ProgressBar
         android:id="@+id/loading_jokes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/swp_jokes"
-        app:layout_constraintTop_toTopOf="@id/swp_jokes"
+        app:layout_constraintBottom_toBottomOf="@id/rec_jokes"
+        app:layout_constraintTop_toTopOf="@id/rec_jokes"
         tools:visibility="invisible"/>
 
     <TextView
@@ -38,8 +31,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="No jokes found..."
-        app:layout_constraintBottom_toBottomOf="@id/swp_jokes"
-        app:layout_constraintTop_toTopOf="@id/swp_jokes"
+        app:layout_constraintBottom_toBottomOf="@id/rec_jokes"
+        app:layout_constraintTop_toTopOf="@id/rec_jokes"
         android:visibility="gone"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
 
