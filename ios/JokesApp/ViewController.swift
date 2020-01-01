@@ -9,22 +9,27 @@
 import UIKit
 import common
 
-class ViewController: UITableViewController, JokesView {
+class ViewController: UITableViewController {
     // MARK: Properties
     var jokes = [Joke]()
     
+    let viewModel = JokesViewModel.Companion.init().create()
+    
     // MARK: JokesView
     func showJokes(jokes: [Joke]) {
-        self.jokes += jokes
+        
         tableView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let presenter = JokesPresenter.init(jokesView: self, getJokes: ServiceLocator.init().getJokes)
-    
-        presenter.getJokes()
+        viewModel.jokes.watch { jokesNullable in
+            if let jokes = jokesNullable {
+                self.jokes += jokes as! Array<Joke>
+                self.tableView.reloadData()
+            }
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -1,6 +1,5 @@
 package com.kurt.jokes.mobile.presentation
 
-import com.kurt.jokes.mobile.domain.defaultDispatcher
 import com.kurt.jokes.mobile.domain.usecases.GetJokes
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope

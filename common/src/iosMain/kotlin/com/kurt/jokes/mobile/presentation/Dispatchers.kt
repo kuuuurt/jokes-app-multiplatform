@@ -1,4 +1,4 @@
-package com.kurt.jokes.mobile.domain
+package com.kurt.jokes.mobile.presentation
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Runnable

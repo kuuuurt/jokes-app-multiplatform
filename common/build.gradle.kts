@@ -29,7 +29,13 @@ kotlin {
         else
             ::iosX64
 
-    iOSTarget("ios") {}
+    iOSTarget("ios") {
+        compilations {
+            val main by getting {
+                kotlinOptions.freeCompilerArgs = listOf("-Xobjc-generics")
+            }
+        }
+    }
     android()
 
 
@@ -60,6 +66,11 @@ dependencies {
     implementation("io.ktor:ktor-client-serialization-jvm:1.2.6")
     implementation("io.ktor:ktor-client-android:1.2.6")
     implementation("com.squareup.sqldelight:android-driver:1.2.1")
+
+    // LiveData and ViewModel
+    val lifecycleVersion = "2.2.0-rc03"
+    implementation("androidx.lifecycle:lifecycle-extensions:$lifecycleVersion")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
 }
 
 android {
