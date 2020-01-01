@@ -8,7 +8,7 @@ buildscript {
         coroutinesVersion = "1.3.3"
 
         navigationVersion = "2.2.0-rc04"
-        sqlDelightVersion = "1.1.4"
+        sqlDelightVersion = "1.2.1"
     }
     repositories {
         google()

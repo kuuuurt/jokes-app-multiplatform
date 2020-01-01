@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Common
+import common
 
 class ViewController: UITableViewController, JokesView {
     // MARK: Properties
