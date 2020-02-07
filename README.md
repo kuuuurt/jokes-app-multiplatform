@@ -27,4 +27,4 @@ Unfortunately, modifying the shared code requires Android Studio or IntelliJ IDE
 
 ## Authors
 
-- Kurt Renzo Acosta - [kurt.acosta@whitecloak.com](mailto:kurt.r.acosta@gmail.com)
+- Kurt Renzo Acosta - [kurt.r.acosta@gmail.com](mailto:kurt.r.acosta@gmail.com)
