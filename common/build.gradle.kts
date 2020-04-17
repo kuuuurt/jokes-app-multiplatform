@@ -68,7 +68,7 @@ dependencies {
     implementation("com.squareup.sqldelight:android-driver:1.2.1")
 
     // LiveData and ViewModel
-    val lifecycleVersion = "2.2.0-rc03"
+    val lifecycleVersion = "2.2.0"
     implementation("androidx.lifecycle:lifecycle-extensions:$lifecycleVersion")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
 }
