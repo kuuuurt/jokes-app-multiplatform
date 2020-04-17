@@ -1,7 +1,7 @@
 package com.kurt.jokes.mobile.di
 
 import com.kurt.jokes.mobile.data.JokesRepositoryImpl
-import com.kurt.jokes.mobile.data.engine
+import com.kurt.jokes.mobile.data.remote.engine
 import com.kurt.jokes.mobile.data.local.JokesLocalSource
 import com.kurt.jokes.mobile.data.remote.JokesRemoteSource
 import com.kurt.jokes.mobile.domain.repositories.JokesRepository

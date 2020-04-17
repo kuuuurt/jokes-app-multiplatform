@@ -5,7 +5,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancelChildren
 
 /**
- * Copyright 2020, White Cloak Technologies, Inc., All rights reserved.
+ * Copyright 2020, Kurt Renzo Acosta, All rights reserved.
  *
  * @author Kurt Renzo Acosta
  * @since 01/01/2020
@@ -13,7 +13,7 @@ import kotlinx.coroutines.cancelChildren
 
 actual open class BaseViewModel actual constructor() {
     private val viewModelJob = SupervisorJob()
-    val viewModelScope: CoroutineScope = CoroutineScope(defaultDispatcher + viewModelJob)
+    val viewModelScope: CoroutineScope = CoroutineScope(mainDispatcher + viewModelJob)
 
     actual val clientScope: CoroutineScope = viewModelScope
 

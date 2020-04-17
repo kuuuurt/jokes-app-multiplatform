@@ -7,12 +7,14 @@ import io.ktor.client.features.json.JsonFeature
 import io.ktor.client.features.json.serializer.KotlinxSerializer
 import io.ktor.client.request.get
 import kotlinx.serialization.list
+import kotlin.reflect.typeOf
 
+@OptIn(ExperimentalStdlibApi::class)
 class JokesRemoteSource(clientEngine: HttpClientEngine) {
     private val client = HttpClient(clientEngine) {
         install(JsonFeature) {
             serializer = KotlinxSerializer().apply {
-                register(Joke.serializer().list)
+                typeOf<List<Joke>>()
             }
         }
     }
