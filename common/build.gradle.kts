@@ -17,6 +17,8 @@ sqldelight {
 
 version = "1.0.0"
 
+val coroutinesVersion = "1.3.5"
+
 kotlin {
     cocoapods {
         summary = "Shared module for Android and iOS"
@@ -41,7 +43,7 @@ kotlin {
 
     sourceSets["commonMain"].dependencies {
         implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
-        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.3.3")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$coroutinesVersion")
         implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.14.0")
         implementation("io.ktor:ktor-client-json:1.2.6")
         implementation("io.ktor:ktor-client-serialization:1.2.6")
@@ -51,7 +53,7 @@ kotlin {
 
     sourceSets["iosMain"].dependencies {
         implementation("org.jetbrains.kotlin:kotlin-stdlib")
-        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.3")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutinesVersion")
         implementation("io.ktor:ktor-client-json-native:1.2.6")
         implementation("io.ktor:ktor-client-serialization-native:1.2.6")
         implementation("io.ktor:ktor-client-ios:1.2.6")
@@ -61,7 +63,7 @@ kotlin {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
     implementation("io.ktor:ktor-client-json-jvm:1.2.6")
     implementation("io.ktor:ktor-client-serialization-jvm:1.2.6")
     implementation("io.ktor:ktor-client-android:1.2.6")
