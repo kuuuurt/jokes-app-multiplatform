@@ -18,6 +18,9 @@ sqldelight {
 version = "1.0.0"
 
 val coroutinesVersion = "1.3.5"
+val ktorVersion = "1.3.2"
+val sqlDelightVersion = "1.3.0"
+val serializationVersion = "0.20.0"
 
 kotlin {
     cocoapods {
@@ -44,30 +47,30 @@ kotlin {
     sourceSets["commonMain"].dependencies {
         implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$coroutinesVersion")
-        implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.14.0")
-        implementation("io.ktor:ktor-client-json:1.2.6")
-        implementation("io.ktor:ktor-client-serialization:1.2.6")
-        implementation("io.ktor:ktor-client-core:1.2.6")
-        implementation("com.squareup.sqldelight:runtime:1.2.1")
+        implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:$serializationVersion")
+        implementation("io.ktor:ktor-client-json:$ktorVersion")
+        implementation("io.ktor:ktor-client-serialization:$ktorVersion")
+        implementation("io.ktor:ktor-client-core:$ktorVersion")
+        implementation("com.squareup.sqldelight:runtime:$sqlDelightVersion")
     }
 
     sourceSets["iosMain"].dependencies {
         implementation("org.jetbrains.kotlin:kotlin-stdlib")
         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutinesVersion")
-        implementation("io.ktor:ktor-client-json-native:1.2.6")
-        implementation("io.ktor:ktor-client-serialization-native:1.2.6")
-        implementation("io.ktor:ktor-client-ios:1.2.6")
-        implementation("com.squareup.sqldelight:ios-driver:1.2.1")
+        implementation("io.ktor:ktor-client-json-native:$ktorVersion")
+        implementation("io.ktor:ktor-client-serialization-native:$ktorVersion")
+        implementation("io.ktor:ktor-client-ios:$ktorVersion")
+        implementation("com.squareup.sqldelight:native-driver:$sqlDelightVersion")
     }
 }
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
-    implementation("io.ktor:ktor-client-json-jvm:1.2.6")
-    implementation("io.ktor:ktor-client-serialization-jvm:1.2.6")
-    implementation("io.ktor:ktor-client-android:1.2.6")
-    implementation("com.squareup.sqldelight:android-driver:1.2.1")
+    implementation("io.ktor:ktor-client-json-jvm:$ktorVersion")
+    implementation("io.ktor:ktor-client-serialization-jvm:$ktorVersion")
+    implementation("io.ktor:ktor-client-android:$ktorVersion")
+    implementation("com.squareup.sqldelight:android-driver:$sqlDelightVersion")
 
     // LiveData and ViewModel
     val lifecycleVersion = "2.2.0"

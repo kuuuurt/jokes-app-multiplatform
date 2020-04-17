@@ -3,18 +3,10 @@ package com.kurt.jokes.mobile.data.local
 import com.kurt.jokes.JokeDb
 import com.kurt.jokes.JokesDatabase
 import com.kurt.jokes.mobile.domain.entities.Joke
-import com.squareup.sqldelight.db.SqlDriver
 
-class JokesLocalSource {
-    var driver: SqlDriver? = JokesDatabaseDriver.jokesDatabaseDriver
-
-    private val db by lazy {
-        val driver = requireNotNull(driver) { "No SqlDriver found!" }
-        JokesDatabase.invoke(driver).jokeQueries
-    }
-
+class JokesLocalSource(private val db: JokesDatabase) {
     fun getJokes(): List<Joke> {
-        return db.getAllJokes().executeAsList().map {
+        return db.jokeQueries.getAllJokes().executeAsList().map {
             Joke(
                 id = it.id,
                 setup = it.setup,
@@ -26,7 +18,7 @@ class JokesLocalSource {
 
     fun saveJokes(jokes: List<Joke>) {
         jokes.forEach {
-            db.insertJoke(
+            db.jokeQueries.insertJoke(
                 JokeDb.Impl(
                     id = it.id,
                     setup = it.setup,

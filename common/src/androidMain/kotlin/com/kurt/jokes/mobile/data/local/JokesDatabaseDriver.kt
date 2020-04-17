@@ -6,10 +6,10 @@ import com.squareup.sqldelight.android.AndroidSqliteDriver
 import com.squareup.sqldelight.db.SqlDriver
 
 actual object JokesDatabaseDriver {
-    actual var jokesDatabaseDriver: SqlDriver? = null
+    lateinit var context: Context
 
-    fun createDriver(context: Context) {
-        jokesDatabaseDriver = AndroidSqliteDriver(JokesDatabase.Schema, context, "asdf.db")
+    actual fun getDriver(): SqlDriver {
+        return AndroidSqliteDriver(JokesDatabase.Schema, context, "asdf.db")
     }
 }
 

@@ -2,8 +2,8 @@ package com.kurt.jokes.mobile.data.local
 
 import com.kurt.jokes.JokesDatabase
 import com.squareup.sqldelight.db.SqlDriver
-import com.squareup.sqldelight.drivers.ios.NativeSqliteDriver
+import com.squareup.sqldelight.drivers.native.NativeSqliteDriver
 
 actual object JokesDatabaseDriver {
-    actual var jokesDatabaseDriver: SqlDriver? = NativeSqliteDriver(JokesDatabase.Schema, "jokes.db")
+    actual fun getDriver(): SqlDriver = NativeSqliteDriver(JokesDatabase.Schema, "jokes.db")
 }
