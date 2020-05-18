@@ -13,17 +13,11 @@ class JokesRepositoryImpl(
 ) : JokesRepository {
     override suspend fun getJokes() = withContext(ioDispatcher) {
         try {
-            fetchJokes()
+            val jokes = jokesRemoteSource.getJokes()
+            jokesLocalSource.saveJokes(jokes)
         } catch (exception: Exception) {
             println("Repository Error: ${exception.message}")
         }
         jokesLocalSource.getJokes()
-    }
-
-    private suspend fun fetchJokes() {
-        withContext(ioDispatcher) {
-            val jokes = jokesRemoteSource.getJokes()
-            jokesLocalSource.saveJokes(jokes)
-        }
     }
 }
