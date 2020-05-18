@@ -32,9 +32,6 @@ class JokesViewModel(private val getJokes: GetJokes) : BaseViewModel() {
 
     @ThreadLocal
     companion object {
-        fun create() =
-            JokesViewModel(
-                ServiceLocator.getJokes
-            )
+        fun create() = JokesViewModel(ServiceLocator.getJokes)
     }
 }

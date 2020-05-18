@@ -53,8 +53,8 @@ dependencies {
 
     // LiveData and ViewModel
     val lifecycleVersion = "2.2.0"
-    implementation("androidx.lifecycle:lifecycle-extensions:$lifecycleVersion")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion")
 
     // AndroidX
     implementation("androidx.appcompat:appcompat:1.1.0-rc01")

@@ -6,6 +6,8 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.asLiveData
+import androidx.lifecycle.observe
 import androidx.recyclerview.widget.RecyclerView
 import com.kurt.jokes.R
 import com.kurt.jokes.mobile.presentation.features.jokes.JokesViewModel
@@ -19,9 +21,6 @@ class JokesFragment : Fragment(R.layout.fragment_jokes) {
     private val viewModel: JokesViewModel by viewModels { JokesViewModelFactory() }
     private val jokesAdapter by lazy { JokesListAdapter() }
 
-    private var jokesStateCloseable: Closeable? = null
-    private var jokesCloseable: Closeable? = null
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val recJokes = view.findViewById<RecyclerView>(R.id.rec_jokes)
@@ -31,18 +30,14 @@ class JokesFragment : Fragment(R.layout.fragment_jokes) {
 
         recJokes.adapter = jokesAdapter
 
-        jokesStateCloseable = viewModel.jokesState.watch {
+        viewModel.jokesState.asLiveData().observe(viewLifecycleOwner) {
             recJokes.visibility = if (it is UiState.Success) View.VISIBLE else View.INVISIBLE
             loadingJokes.visibility = if (it is UiState.Loading) View.VISIBLE else View.GONE
             emptyJokes.visibility = if (it is UiState.Error) View.VISIBLE else View.GONE
         }
 
-        jokesCloseable = viewModel.jokes.watch { jokesAdapter.submitList(it) }
-    }
-
-    override fun onPause() {
-        super.onPause()
-        jokesStateCloseable?.close()
-        jokesCloseable?.close()
+        viewModel.jokes.asLiveData().observe(viewLifecycleOwner) {
+            jokesAdapter.submitList(it)
+        }
     }
 }
