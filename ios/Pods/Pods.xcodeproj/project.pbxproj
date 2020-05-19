@@ -58,8 +58,8 @@
 /* Begin PBXFileReference section */
 		0B4417E0349CCD73ABE6F1A1B2EFF969 /* Pods-JokesApp-JokesAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JokesApp-JokesAppUITests.modulemap"; sourceTree = "<group>"; };
 		0EA4D094B745A8A91EA03B7CF6CD4E39 /* Pods-JokesApp-JokesAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JokesApp-JokesAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		12230AD208931875A5EDD42A2F198905 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Common.framework; path = build/cocoapods/framework/Common.framework; sourceTree = "<group>"; };
 		14F3E0BE1549710890F51EB8800CBDE3 /* Pods-JokesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JokesApp.release.xcconfig"; sourceTree = "<group>"; };
-		157AF245809B9B0ED735C5EB59503E4E /* common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = common.framework; path = build/cocoapods/framework/common.framework; sourceTree = "<group>"; };
 		163C0DEAED270520C1A8E1E6B47AEE8F /* common.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = common.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2E0A6D0835A06C8035F27EC64FA3D241 /* Pods-JokesAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JokesAppTests-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -122,7 +122,7 @@
 		10C288ED8CB6513B5C91A0D93410F566 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				43B01D080229AF5D6F985BA360B9AB2E /* Frameworks */,
+				4FC8E1401AAEC032D82E5464B711713F /* Frameworks */,
 				CA78F1B135DB583D0A0F3D2B590C2BAE /* Pod */,
 				B4BC58CD8E21B0415FEA6F35A99FF3B5 /* Support Files */,
 			);
@@ -146,14 +146,6 @@
 			path = "Target Support Files/Pods-JokesAppTests";
 			sourceTree = "<group>";
 		};
-		43B01D080229AF5D6F985BA360B9AB2E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				157AF245809B9B0ED735C5EB59503E4E /* common.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4CF2ADC2D82AF02E4803178C51C24EFE /* Pods-JokesApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +160,14 @@
 			);
 			name = "Pods-JokesApp";
 			path = "Target Support Files/Pods-JokesApp";
+			sourceTree = "<group>";
+		};
+		4FC8E1401AAEC032D82E5464B711713F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12230AD208931875A5EDD42A2F198905 /* Common.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		79517121B45B4BFFD0F53BB5F22ADDF1 /* Targets Support Files */ = {
