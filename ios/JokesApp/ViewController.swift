@@ -30,6 +30,13 @@ class ViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
+      
+      viewModel.jokesState.watch { jokesStateNullable in
+          if let jokesState = jokesStateNullable {
+            // Change state
+            jokesState
+          }
+      }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
