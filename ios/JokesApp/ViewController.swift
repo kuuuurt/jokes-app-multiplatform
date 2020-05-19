@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import common
+import Common
 
 class ViewController: UITableViewController {
     // MARK: Properties

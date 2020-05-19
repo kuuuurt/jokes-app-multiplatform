@@ -10,7 +10,7 @@
   "license": "",
   "summary": "Shared module for Android and iOS",
   "static_framework": true,
-  "vendored_frameworks": "build/cocoapods/framework/common.framework",
+  "vendored_frameworks": "build/cocoapods/framework/Common.framework",
   "libraries": "c++",
   "module_name": "common_umbrella",
   "pod_target_xcconfig": {

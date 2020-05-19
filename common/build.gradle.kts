@@ -26,6 +26,7 @@ kotlin {
     cocoapods {
         summary = "Shared module for Android and iOS"
         homepage = "Link to a Kotlin/Native module homepage"
+        frameworkName = "Common"
     }
 
     val iOSTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
