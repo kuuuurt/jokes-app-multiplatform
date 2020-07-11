@@ -10,63 +10,67 @@ import UIKit
 import Common
 
 class ViewController: UITableViewController {
-    // MARK: Properties
-    var jokes = [Joke]()
-    
-    let viewModel = JokesViewModel.Companion.init().create()
-    
-    // MARK: JokesView
-    func showJokes(jokes: [Joke]) {
-        
-        tableView.reloadData()
+  // MARK: Properties
+  var jokes = [Joke]()
+  
+  let viewModel = JokesViewModel.Companion.init().create()
+  var closeables = [Ktor_ioCloseable]()
+  
+  deinit {
+    closeables.forEach { (closeable) in
+      closeable.close()
     }
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        viewModel.jokes.watch { jokesNullable in
-            if let jokes = jokesNullable {
-                self.jokes += jokes as! Array<Joke>
-                self.tableView.reloadData()
-            }
+    closeables.append(
+      viewModel.jokes.watch { jokesNullable in
+        if let jokes = jokesNullable {
+          self.jokes += jokes as! Array<Joke>
+          self.tableView.reloadData()
         }
-      
-      viewModel.jokesState.watch { jokesStateNullable in
-          if let jokesState = jokesStateNullable {
-            // Change state
-            jokesState
-          }
       }
-    }
+    )
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return jokes.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "JokesTableViewCell", for: indexPath) as? JokesTableViewCell else {
-            fatalError("The dequeued cell is not an instance of JokesTableViewCell.")
+    closeables.append(
+      viewModel.jokesState.watch { jokesStateNullable in
+        if let jokesState = jokesStateNullable {
+          jokesState
         }
-        
-        let joke = jokes[indexPath.row]
-        
-        cell.txtSetup.text = joke.setup
-        cell.txtPunchline.text = joke.punchline
-        cell.txtPunchline.isHidden = !joke.isPunchlineVisible
-        
-        return cell
+      }
+    )
+  }
+  
+  override func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
+  }
+  
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return jokes.count
+  }
+  
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "JokesTableViewCell", for: indexPath) as? JokesTableViewCell else {
+      fatalError("The dequeued cell is not an instance of JokesTableViewCell.")
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) as? JokesTableViewCell else {
-            fatalError("The cell is not an instance of JokesTableViewCell.")
-        }
-        jokes[indexPath.row].isPunchlineVisible = true
-        cell.txtPunchline.isHidden = false
+    let joke = jokes[indexPath.row]
+    
+    cell.txtSetup.text = joke.setup
+    cell.txtPunchline.text = joke.punchline
+    cell.txtPunchline.isHidden = !joke.isPunchlineVisible
+    
+    return cell
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard let cell = tableView.cellForRow(at: indexPath) as? JokesTableViewCell else {
+      fatalError("The cell is not an instance of JokesTableViewCell.")
     }
+    jokes[indexPath.row].isPunchlineVisible = true
+    cell.txtPunchline.isHidden = false
+  }
 }
-

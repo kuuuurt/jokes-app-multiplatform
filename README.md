@@ -20,7 +20,7 @@ Use **Android Studio** and open the project on the root of this repository.  And
 
 ## iOS
 
-Use **Xcode** and open the **ios** folder or use **stark.xcworkspace**. The shared modules cannot be seen from this project. iOS gets the shared code through a framework which is exported from the Kotlin project.  
+Use **Xcode** and open the **ios** folder or use **JokesApp.xcworkspace**. The shared modules cannot be seen from this project. iOS gets the shared code through a framework which is exported from the Kotlin project.
 
 Unfortunately, modifying the shared code requires Android Studio or IntelliJ IDEA.
 
