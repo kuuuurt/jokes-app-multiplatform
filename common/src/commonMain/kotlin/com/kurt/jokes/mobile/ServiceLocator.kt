@@ -1,4 +1,4 @@
-package com.kurt.jokes.mobile.di
+package com.kurt.jokes.mobile
 
 import com.kurt.jokes.JokesDatabase
 import com.kurt.jokes.mobile.data.JokesRepositoryImpl
@@ -12,9 +12,14 @@ import kotlin.native.concurrent.ThreadLocal
 
 @ThreadLocal
 object ServiceLocator {
+    // Data
     private val jokesLocalSource = JokesLocalSource(JokesDatabase(JokesDatabaseDriver.getDriver()))
     private val jokesRemoteSource = JokesRemoteSource(engine)
-    private val jokesRepository: JokesRepository = JokesRepositoryImpl(jokesRemoteSource, jokesLocalSource)
+    private val jokesRepository: JokesRepository = JokesRepositoryImpl(
+        jokesRemoteSource,
+        jokesLocalSource
+    )
 
+    // Domain
     val getJokes = GetJokes(jokesRepository)
 }

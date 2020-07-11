@@ -1,4 +1,3 @@
-import org.jetbrains.kotlin.gradle.plugin.mpp.Framework
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
@@ -17,7 +16,7 @@ sqldelight {
 
 version = "1.0.0"
 
-val coroutinesVersion = "1.3.5"
+val coroutinesVersion = "1.3.7"
 val ktorVersion = "1.3.2"
 val sqlDelightVersion = "1.3.0"
 val serializationVersion = "0.20.0"
