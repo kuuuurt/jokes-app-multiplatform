@@ -15,11 +15,12 @@ object ServiceLocator {
     // Data
     private val jokesLocalSource = JokesLocalSource(JokesDatabase(JokesDatabaseDriver.getDriver()))
     private val jokesRemoteSource = JokesRemoteSource(engine)
-    private val jokesRepository: JokesRepository = JokesRepositoryImpl(
+    var jokesRepository: JokesRepository = JokesRepositoryImpl(
         jokesRemoteSource,
         jokesLocalSource
     )
 
     // Domain
-    val getJokes = GetJokes(jokesRepository)
+    val getJokes
+        get() = GetJokes(jokesRepository)
 }

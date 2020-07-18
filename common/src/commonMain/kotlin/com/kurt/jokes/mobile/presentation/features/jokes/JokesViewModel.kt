@@ -17,10 +17,10 @@ import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.launch
 import kotlin.native.concurrent.ThreadLocal
 
-@ExperimentalCoroutinesApi
+@OptIn(ExperimentalCoroutinesApi::class)
 class JokesViewModel(private val getJokes: GetJokes) : BaseViewModel() {
-    private val _jokes = MutableStateFlow(listOf<Joke>())
-    val jokes: CFlow<List<Joke>> get() = _jokes.asCommonFlow()
+    private val _jokes = MutableStateFlow<List<Joke>?>(null)
+    val jokes: CFlow<List<Joke>> get() = _jokes.filterNotNull().asCommonFlow()
 
     private val _jokesState = MutableStateFlow<UiState?>(null)
     val jokesState: CFlow<UiState> get() = _jokesState.filterNotNull().asCommonFlow()

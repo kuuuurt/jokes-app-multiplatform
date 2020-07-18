@@ -62,6 +62,17 @@ kotlin {
         implementation("io.ktor:ktor-client-ios:$ktorVersion")
         implementation("com.squareup.sqldelight:native-driver:$sqlDelightVersion")
     }
+
+    sourceSets["commonTest"].dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-test-common")
+        implementation("org.jetbrains.kotlin:kotlin-test-annotations-common")
+    }
+
+    sourceSets["androidTest"].dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-test")
+        implementation("org.jetbrains.kotlin:kotlin-test-junit")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.7")
+    }
 }
 
 dependencies {

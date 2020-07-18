@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
+      <module name="common_androidAndroidTest" target="1.6" />
+      <module name="common_androidAndroidTestDebug" target="1.6" />
+      <module name="common_androidDebug" target="1.6" />
+      <module name="common_androidDebugAndroidTest" target="1.6" />
+      <module name="common_androidDebugUnitTest" target="1.6" />
+      <module name="common_androidMain" target="1.6" />
+      <module name="common_androidRelease" target="1.6" />
+      <module name="common_androidReleaseUnitTest" target="1.6" />
+      <module name="common_androidTest" target="1.6" />
+      <module name="common_androidTestDebug" target="1.6" />
+      <module name="common_androidTestRelease" target="1.6" />
+      <module name="common_commonMain" target="1.6" />
+      <module name="common_commonTest" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidAndroidTest" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidAndroidTestDebug" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidDebug" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidDebugAndroidTest" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidDebugUnitTest" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidMain" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidRelease" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidReleaseUnitTest" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidTest" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidTestDebug" target="1.6" />
+      <module name="jokes-app-multiplatform.common.androidTestRelease" target="1.6" />
+      <module name="jokes-app-multiplatform.common.commonMain" target="1.6" />
+      <module name="jokes-app-multiplatform.common.commonTest" target="1.6" />
       <module name="multiplatform-example.common.androidMain" target="1.6" />
       <module name="multiplatform-example.common.androidTest" target="1.6" />
       <module name="multiplatform-example.common.jvmMain" target="1.6" />
