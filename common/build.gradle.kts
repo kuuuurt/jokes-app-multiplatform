@@ -16,10 +16,10 @@ sqldelight {
 
 version = "1.0.0"
 
-val coroutinesVersion = "1.3.7"
-val ktorVersion = "1.3.2"
-val sqlDelightVersion = "1.3.0"
-val serializationVersion = "0.20.0"
+val coroutinesVersion: String by rootProject.extra
+val ktorVersion: String by rootProject.extra
+val sqlDelightVersion: String by rootProject.extra
+val serializationVersion: String by rootProject.extra
 
 kotlin {
     cocoapods {
@@ -28,54 +28,44 @@ kotlin {
         frameworkName = "Common"
     }
 
-    val iOSTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
-        if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
-            ::iosArm64
-        else
-            ::iosX64
-
-    iOSTarget("ios") {
-        compilations {
-            val main by getting {
-                kotlinOptions.freeCompilerArgs = listOf("-Xobjc-generics")
-            }
-        }
-    }
+//    val iOSTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
+//        if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
+//            ::iosArm64
+//        else
+//            ::iosX64
+//
+//    iOSTarget("ios") {
+//        compilations {
+//            val main by getting {
+//                kotlinOptions.freeCompilerArgs = listOf("-Xobjc-generics")
+//            }
+//        }
+//    }
+    ios()
     android()
 
 
     sourceSets["commonMain"].dependencies {
-        implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
-        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$coroutinesVersion")
-        implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:$serializationVersion")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
+        implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$serializationVersion")
         implementation("io.ktor:ktor-client-json:$ktorVersion")
         implementation("io.ktor:ktor-client-serialization:$ktorVersion")
         implementation("io.ktor:ktor-client-core:$ktorVersion")
-        implementation("com.squareup.sqldelight:runtime:$sqlDelightVersion")
     }
 
     sourceSets["iosMain"].dependencies {
-        implementation("org.jetbrains.kotlin:kotlin-stdlib")
-        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutinesVersion")
-        implementation("io.ktor:ktor-client-json-native:$ktorVersion")
-        implementation("io.ktor:ktor-client-serialization-native:$ktorVersion")
-        implementation("io.ktor:ktor-client-ios:$ktorVersion")
         implementation("com.squareup.sqldelight:native-driver:$sqlDelightVersion")
     }
-}
 
-dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
-    implementation("io.ktor:ktor-client-json-jvm:$ktorVersion")
-    implementation("io.ktor:ktor-client-serialization-jvm:$ktorVersion")
-    implementation("io.ktor:ktor-client-android:$ktorVersion")
-    implementation("com.squareup.sqldelight:android-driver:$sqlDelightVersion")
+    sourceSets["androidMain"].dependencies {
+        implementation("io.ktor:ktor-client-android:$ktorVersion")
+        implementation("com.squareup.sqldelight:android-driver:$sqlDelightVersion")
 
-    // LiveData and ViewModel
-    val lifecycleVersion = "2.2.0"
-    implementation("androidx.lifecycle:lifecycle-extensions:$lifecycleVersion")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
+        // LiveData and ViewModel
+        val lifecycleVersion = "2.2.0"
+        implementation("androidx.lifecycle:lifecycle-extensions:$lifecycleVersion")
+        implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
+    }
 }
 
 android {
@@ -84,14 +74,6 @@ android {
         minSdkVersion(21)
         targetSdkVersion(29)
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    sourceSets {
-        getByName("main") {
-            manifest.srcFile("src/androidMain/AndroidManifest.xml")
-            java.srcDirs("src/androidMain/kotlin")
-            res.srcDirs("src/androidMain/res")
-        }
     }
 
     buildTypes {
