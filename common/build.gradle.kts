@@ -28,19 +28,6 @@ kotlin {
         frameworkName = "Common"
     }
 
-//    val iOSTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
-//        if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
-//            ::iosArm64
-//        else
-//            ::iosX64
-//
-//    iOSTarget("ios") {
-//        compilations {
-//            val main by getting {
-//                kotlinOptions.freeCompilerArgs = listOf("-Xobjc-generics")
-//            }
-//        }
-//    }
     ios()
     android()
 
