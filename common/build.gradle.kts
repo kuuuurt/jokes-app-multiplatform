@@ -38,9 +38,11 @@ kotlin {
         implementation("io.ktor:ktor-client-json:$ktorVersion")
         implementation("io.ktor:ktor-client-serialization:$ktorVersion")
         implementation("io.ktor:ktor-client-core:$ktorVersion")
+        implementation("io.ktor:ktor-client-cio:$ktorVersion")
     }
 
     sourceSets["iosMain"].dependencies {
+        implementation("io.ktor:ktor-client-ios:$ktorVersion")
         implementation("com.squareup.sqldelight:native-driver:$sqlDelightVersion")
     }
 

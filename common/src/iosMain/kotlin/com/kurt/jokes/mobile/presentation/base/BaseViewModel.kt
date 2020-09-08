@@ -13,7 +13,7 @@ import kotlinx.coroutines.cancelChildren
 
 actual open class BaseViewModel actual constructor() {
     private val viewModelJob = SupervisorJob()
-    val viewModelScope: CoroutineScope = CoroutineScope(mainDispatcher + viewModelJob)
+    val viewModelScope: CoroutineScope = CoroutineScope(ioDispatcher + viewModelJob)
 
     actual val clientScope: CoroutineScope = viewModelScope
 
