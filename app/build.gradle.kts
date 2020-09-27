@@ -42,7 +42,7 @@ dependencies {
 
     val kotlinVersion = rootProject.extra["kotlinVersion"]
     val navigationVersion = rootProject.extra["navigationVersion"]
-    val coroutinesVersion = rootProject.extra["coroutinesVersion"]
+    val coroutinesVersion: String by rootProject.extra
 
     // Kotlin
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion")
@@ -71,8 +71,4 @@ dependencies {
 
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
-
-    testImplementation("junit:junit:4.12")
-    androidTestImplementation("androidx.test:runner:1.2.0")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
 }

@@ -19,7 +19,7 @@ class JokesLocalSource(private val db: JokesDatabase) {
     fun saveJokes(jokes: List<Joke>) {
         jokes.forEach {
             db.jokeQueries.insertJoke(
-                JokeDb.Impl(
+                JokeDb(
                     id = it.id,
                     setup = it.setup,
                     punchline = it.punchline,

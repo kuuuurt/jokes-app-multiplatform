@@ -12,6 +12,7 @@ import Common
 class ViewController: UITableViewController {
   // MARK: Properties
   var jokes = [Joke]()
+  var visibleJokes = Set<Int>()
   
   let viewModel = JokesViewModel.Companion.init().create()
   var closeables = [Ktor_ioCloseable]()
@@ -61,7 +62,7 @@ class ViewController: UITableViewController {
     
     cell.txtSetup.text = joke.setup
     cell.txtPunchline.text = joke.punchline
-    cell.txtPunchline.isHidden = !joke.isPunchlineVisible
+    cell.txtPunchline.isHidden = !visibleJokes.contains(indexPath.row)
     
     return cell
   }
@@ -70,7 +71,11 @@ class ViewController: UITableViewController {
     guard let cell = tableView.cellForRow(at: indexPath) as? JokesTableViewCell else {
       fatalError("The cell is not an instance of JokesTableViewCell.")
     }
-    jokes[indexPath.row].isPunchlineVisible = true
-    cell.txtPunchline.isHidden = false
+    if (visibleJokes.contains(indexPath.row)) {
+      visibleJokes.remove(indexPath.row)
+    } else {
+      visibleJokes.insert(indexPath.row)
+    }
+    cell.txtPunchline.isHidden = !cell.txtPunchline.isHidden
   }
 }

@@ -20,33 +20,33 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0B52579472450EA188BA302A392F42C3 /* Pods-JokesApp-JokesAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91525EA385650B3A88BF93275D25A557 /* Pods-JokesApp-JokesAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C918F7C6A4D2BCC7C817CE4E2726A67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4C77C8C6E722912C73869A5F3D0EB73C /* Pods-JokesApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E932BD27DE635293E4F76C358F30F /* Pods-JokesApp-dummy.m */; };
-		509C5DCDFED22636A57C3352E2675040 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		88CD4F7FEB2DF665B5178DA85BBCF46D /* Pods-JokesAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 871F59F46454680A8CFE720D087964C0 /* Pods-JokesAppTests-dummy.m */; };
-		C5084AF7DF705C7DA92C22C7202F21BF /* Pods-JokesApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5168DE93CF4D0D86BD7541580DA440 /* Pods-JokesApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3DD3A09EB08E98FD9B79571627F2282 /* Pods-JokesAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF704D2A051598612D47A1520F2B7E93 /* Pods-JokesAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDA5192D249F528847116C545307E516 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FE2A6F59A1459AA8E14717DFE1A6C593 /* Pods-JokesApp-JokesAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D24D9C54B7358C05833BA7C9685B08D /* Pods-JokesApp-JokesAppUITests-dummy.m */; };
+		15DBF5258B14755E5862DFE1041D01F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2AFF036974BCA2B95722765CBD106238 /* Pods-JokesApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E932BD27DE635293E4F76C358F30F /* Pods-JokesApp-dummy.m */; };
+		301BF5351F9E119DABF07E3F129E3D8E /* Pods-JokesAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 871F59F46454680A8CFE720D087964C0 /* Pods-JokesAppTests-dummy.m */; };
+		3CA2142766C1EE4F7592AEA92C6F7764 /* Pods-JokesApp-JokesAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D24D9C54B7358C05833BA7C9685B08D /* Pods-JokesApp-JokesAppUITests-dummy.m */; };
+		5910CE0F98EA91D64A4622918A0CFC6E /* Pods-JokesApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5168DE93CF4D0D86BD7541580DA440 /* Pods-JokesApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F659E02FC0FD7F6055FF5A637786A63 /* Pods-JokesAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF704D2A051598612D47A1520F2B7E93 /* Pods-JokesAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B4C834126F2DFFC5C83C817F24806BB /* Pods-JokesApp-JokesAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91525EA385650B3A88BF93275D25A557 /* Pods-JokesApp-JokesAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E7F745AF110EC62AFF9357E6B99866A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EFE24C2BAD08931FEDF8C33FEADFCB44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5A3E0F24DF3C28FF1BE3D77640368F04 /* PBXContainerItemProxy */ = {
+		5C35E5CCA37612CC1FD9B7C2EF0579E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E80DDCE0F69CF2F5AA0E0142C25F8F35;
 			remoteInfo = "Pods-JokesApp";
 		};
-		A5CC20D4045D0213FDB8ACDC325F1AB7 /* PBXContainerItemProxy */ = {
+		624A0E59AA2A0FEA029CEA306F1BE85C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8217FBB9D1218C346C0781D0B8F2BBE8;
 			remoteInfo = common;
 		};
-		F795D292033D24BE27E6A44C0AE75C7E /* PBXContainerItemProxy */ = {
+		80083E69FE8244BC8E9F46D6FFEBADE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -58,16 +58,16 @@
 /* Begin PBXFileReference section */
 		0B4417E0349CCD73ABE6F1A1B2EFF969 /* Pods-JokesApp-JokesAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JokesApp-JokesAppUITests.modulemap"; sourceTree = "<group>"; };
 		0EA4D094B745A8A91EA03B7CF6CD4E39 /* Pods-JokesApp-JokesAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JokesApp-JokesAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		12230AD208931875A5EDD42A2F198905 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Common.framework; path = build/cocoapods/framework/Common.framework; sourceTree = "<group>"; };
 		14F3E0BE1549710890F51EB8800CBDE3 /* Pods-JokesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JokesApp.release.xcconfig"; sourceTree = "<group>"; };
-		163C0DEAED270520C1A8E1E6B47AEE8F /* common.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = common.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2E0A6D0835A06C8035F27EC64FA3D241 /* Pods-JokesAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JokesAppTests-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4A91223836C7F2614DDF49F3EA74DBD1 /* Pods-JokesAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JokesAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5322F4D58F773B8686AB4E3C7D1175E0 /* common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = common.release.xcconfig; sourceTree = "<group>"; };
 		5493CC0BF75CDFB1046A1061E754C137 /* Pods-JokesApp-JokesAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JokesApp-JokesAppUITests-Info.plist"; sourceTree = "<group>"; };
 		61703E4C99B30702491484BAF9E8E17C /* Pods-JokesApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JokesApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		63C3C8F62CD1AF365B0FB82BEBFC65D8 /* Pods-JokesApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JokesApp.modulemap"; sourceTree = "<group>"; };
 		656FF9BB449B7EEA04C53643815CBBBC /* Pods-JokesApp-JokesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JokesApp-JokesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		66CB301C7AFFA80B04FF8C97876B8394 /* common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = common.debug.xcconfig; sourceTree = "<group>"; };
 		708393D972AFAF28C3EA72D57A8DCD16 /* Pods-JokesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JokesAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		723411B8F06E13DA628DCA9BBC50B077 /* Pods-JokesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JokesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		777F4D29492132AD0A735D515DBDAFF1 /* Pods-JokesAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JokesAppTests.modulemap"; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		83A24B950A0EB13DC88DC0EC699DA9BF /* Pods-JokesAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JokesAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		871F59F46454680A8CFE720D087964C0 /* Pods-JokesAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JokesAppTests-dummy.m"; sourceTree = "<group>"; };
 		91525EA385650B3A88BF93275D25A557 /* Pods-JokesApp-JokesAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JokesApp-JokesAppUITests-umbrella.h"; sourceTree = "<group>"; };
-		9226B674B21145B731FF81DB9707B302 /* common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = common.debug.xcconfig; sourceTree = "<group>"; };
+		97713D97AAEED94F7795B9A7B1CFCFB1 /* common.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = common.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D24D9C54B7358C05833BA7C9685B08D /* Pods-JokesApp-JokesAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JokesApp-JokesAppUITests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F5168DE93CF4D0D86BD7541580DA440 /* Pods-JokesApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JokesApp-umbrella.h"; sourceTree = "<group>"; };
@@ -84,52 +84,41 @@
 		A8469256EDDC39F53B49B53F73C4067F /* Pods-JokesApp-JokesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JokesApp-JokesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1F6302B5E0DC60C110AB6094FD5541 /* Pods_JokesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JokesApp.framework; path = "Pods-JokesApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF704D2A051598612D47A1520F2B7E93 /* Pods-JokesAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JokesAppTests-umbrella.h"; sourceTree = "<group>"; };
+		B0527BDD189F3B318A5AD10303B0D4C2 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Common.framework; path = build/cocoapods/framework/Common.framework; sourceTree = "<group>"; };
 		BB5BD0E9DE070D702505462BA8003187 /* Pods-JokesApp-JokesAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JokesApp-JokesAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CAF4B8F5962ECD9B700FEDD1798A502A /* common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = common.release.xcconfig; sourceTree = "<group>"; };
 		CC079A1E17692234FDF67AFF36C34346 /* Pods-JokesApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JokesApp-Info.plist"; sourceTree = "<group>"; };
 		D00B5C016EB2EF5F08A1BC5910F60065 /* Pods_JokesApp_JokesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JokesApp_JokesAppUITests.framework; path = "Pods-JokesApp-JokesAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0501490A6A01714DA9D4854B9C007A /* Pods_JokesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JokesAppTests.framework; path = "Pods-JokesAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E8FCF36993CB33DCFB264179EC58357 /* Frameworks */ = {
+		A3375900D861C018F5A3897FD5E15038 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C918F7C6A4D2BCC7C817CE4E2726A67 /* Foundation.framework in Frameworks */,
+				EFE24C2BAD08931FEDF8C33FEADFCB44 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D63A1E386B1CE56881D1957D4C576712 /* Frameworks */ = {
+		B7EB58C0B4FF47A8CBA9A4865183F26E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				509C5DCDFED22636A57C3352E2675040 /* Foundation.framework in Frameworks */,
+				9E7F745AF110EC62AFF9357E6B99866A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF14F9AFC6F81E524EFD0CA8348065FB /* Frameworks */ = {
+		DCA920909B6E9740D2A59E2A80342D5D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA5192D249F528847116C545307E516 /* Foundation.framework in Frameworks */,
+				15DBF5258B14755E5862DFE1041D01F0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10C288ED8CB6513B5C91A0D93410F566 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				4FC8E1401AAEC032D82E5464B711713F /* Frameworks */,
-				CA78F1B135DB583D0A0F3D2B590C2BAE /* Pod */,
-				B4BC58CD8E21B0415FEA6F35A99FF3B5 /* Support Files */,
-			);
-			name = common;
-			path = ../../common;
-			sourceTree = "<group>";
-		};
 		193FE2F0F3FF64C4133F563BCB35279F /* Pods-JokesAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,10 +151,28 @@
 			path = "Target Support Files/Pods-JokesApp";
 			sourceTree = "<group>";
 		};
-		4FC8E1401AAEC032D82E5464B711713F /* Frameworks */ = {
+		5F2A29831F31B876774DC0778F1484B3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				12230AD208931875A5EDD42A2F198905 /* Common.framework */,
+				66CB301C7AFFA80B04FF8C97876B8394 /* common.debug.xcconfig */,
+				5322F4D58F773B8686AB4E3C7D1175E0 /* common.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../ios/Pods/Target Support Files/common";
+			sourceTree = "<group>";
+		};
+		61BB301BCB2971D167BA3AFB6B1288F0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				97713D97AAEED94F7795B9A7B1CFCFB1 /* common.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		73045DA0C14215EBCA1BC6C3026CDB37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0527BDD189F3B318A5AD10303B0D4C2 /* Common.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,7 +190,7 @@
 		A534ECAEA5F0A03EFFABCF1B79475E00 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				10C288ED8CB6513B5C91A0D93410F566 /* common */,
+				FFFDDE6ED69B83B23091AF23F80AE6DC /* common */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -204,30 +211,12 @@
 			path = "Target Support Files/Pods-JokesApp-JokesAppUITests";
 			sourceTree = "<group>";
 		};
-		B4BC58CD8E21B0415FEA6F35A99FF3B5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9226B674B21145B731FF81DB9707B302 /* common.debug.xcconfig */,
-				CAF4B8F5962ECD9B700FEDD1798A502A /* common.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../iOS/Pods/Target Support Files/common";
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		CA78F1B135DB583D0A0F3D2B590C2BAE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				163C0DEAED270520C1A8E1E6B47AEE8F /* common.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -259,30 +248,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FFFDDE6ED69B83B23091AF23F80AE6DC /* common */ = {
+			isa = PBXGroup;
+			children = (
+				73045DA0C14215EBCA1BC6C3026CDB37 /* Frameworks */,
+				61BB301BCB2971D167BA3AFB6B1288F0 /* Pod */,
+				5F2A29831F31B876774DC0778F1484B3 /* Support Files */,
+			);
+			name = common;
+			path = ../../common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0C1AAEFCC53ABCEDDCEC0966CEB8AC26 /* Headers */ = {
+		4F2E248413064A51AE24E2CAD677812E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B52579472450EA188BA302A392F42C3 /* Pods-JokesApp-JokesAppUITests-umbrella.h in Headers */,
+				5910CE0F98EA91D64A4622918A0CFC6E /* Pods-JokesApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B712E28343C252CD7D4BB4A1CF7D79D /* Headers */ = {
+		94AB215DC9CE1FB933D280CA1E35ECB8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3DD3A09EB08E98FD9B79571627F2282 /* Pods-JokesAppTests-umbrella.h in Headers */,
+				9B4C834126F2DFFC5C83C817F24806BB /* Pods-JokesApp-JokesAppUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		842A1C0B3DE2329550B0901974C7F49E /* Headers */ = {
+		EAB3F72C43D69BC21AC35F4D47AE759F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5084AF7DF705C7DA92C22C7202F21BF /* Pods-JokesApp-umbrella.h in Headers */,
+				6F659E02FC0FD7F6055FF5A637786A63 /* Pods-JokesAppTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,17 +291,17 @@
 /* Begin PBXNativeTarget section */
 		69324FB9C937C29B0F347EBA146BEE9B /* Pods-JokesAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC5FAC3702EEF9FC353DA7892C2A148A /* Build configuration list for PBXNativeTarget "Pods-JokesAppTests" */;
+			buildConfigurationList = A4E6ED1E049DD76E34F5B81B6948CB67 /* Build configuration list for PBXNativeTarget "Pods-JokesAppTests" */;
 			buildPhases = (
-				6B712E28343C252CD7D4BB4A1CF7D79D /* Headers */,
-				ECB7151E476CBDCB3C58F16BA295356E /* Sources */,
-				EF14F9AFC6F81E524EFD0CA8348065FB /* Frameworks */,
-				23655DE0A937C5249D2C2B5D0512CBC3 /* Resources */,
+				EAB3F72C43D69BC21AC35F4D47AE759F /* Headers */,
+				F06AA4DBCF10FBD77CE304DDD8D2D1E5 /* Sources */,
+				B7EB58C0B4FF47A8CBA9A4865183F26E /* Frameworks */,
+				245AE7B239D74BB6093B9F4028EEF0CA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				947AD29CDAF6924AD299929C94BD57CB /* PBXTargetDependency */,
+				A39D20AA079A0461DD415D3CED292B50 /* PBXTargetDependency */,
 			);
 			name = "Pods-JokesAppTests";
 			productName = "Pods-JokesAppTests";
@@ -310,17 +310,17 @@
 		};
 		8F3C77D4235F871E1EAC0F613E937E0D /* Pods-JokesApp-JokesAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFE6CFF066E2AB0F63C86E8BB75FE342 /* Build configuration list for PBXNativeTarget "Pods-JokesApp-JokesAppUITests" */;
+			buildConfigurationList = 0CD994F8AF4BC87D8EF8DA112923F7C9 /* Build configuration list for PBXNativeTarget "Pods-JokesApp-JokesAppUITests" */;
 			buildPhases = (
-				0C1AAEFCC53ABCEDDCEC0966CEB8AC26 /* Headers */,
-				F404099EE851DAA480DCE0D8F3D056C1 /* Sources */,
-				6E8FCF36993CB33DCFB264179EC58357 /* Frameworks */,
-				E449B474706F9901C3B8B8C0AB2B4EA0 /* Resources */,
+				94AB215DC9CE1FB933D280CA1E35ECB8 /* Headers */,
+				E04E3E4854ACEB995FE3EF2967E6EBAF /* Sources */,
+				A3375900D861C018F5A3897FD5E15038 /* Frameworks */,
+				DDD2A6A1ADC5C7A90E2C1D9ECEEF0F92 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CFC9B35B2B488448D7E83CB5B56DC18D /* PBXTargetDependency */,
+				731A3EB744726D21040517CAED2A828C /* PBXTargetDependency */,
 			);
 			name = "Pods-JokesApp-JokesAppUITests";
 			productName = "Pods-JokesApp-JokesAppUITests";
@@ -329,17 +329,17 @@
 		};
 		E80DDCE0F69CF2F5AA0E0142C25F8F35 /* Pods-JokesApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08D506E9900F4E7C35B1F5E9D4DA352C /* Build configuration list for PBXNativeTarget "Pods-JokesApp" */;
+			buildConfigurationList = 1D5CC9A098DD244066611452EF1CF582 /* Build configuration list for PBXNativeTarget "Pods-JokesApp" */;
 			buildPhases = (
-				842A1C0B3DE2329550B0901974C7F49E /* Headers */,
-				690CEA070374964615B4154B489AEC58 /* Sources */,
-				D63A1E386B1CE56881D1957D4C576712 /* Frameworks */,
-				C819F14F1CB05894C0D46DE2559048AA /* Resources */,
+				4F2E248413064A51AE24E2CAD677812E /* Headers */,
+				3387B2E60308A02E2823ABCE70DD80F8 /* Sources */,
+				DCA920909B6E9740D2A59E2A80342D5D /* Frameworks */,
+				19174D40C431384B6FEC4705DD90CF8D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				048DCD8A6A6AB2347ABF043FB1E44B49 /* PBXTargetDependency */,
+				27CB6DE49363133263353E840DA25810 /* PBXTargetDependency */,
 			);
 			name = "Pods-JokesApp";
 			productName = "Pods-JokesApp";
@@ -377,21 +377,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		23655DE0A937C5249D2C2B5D0512CBC3 /* Resources */ = {
+		19174D40C431384B6FEC4705DD90CF8D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C819F14F1CB05894C0D46DE2559048AA /* Resources */ = {
+		245AE7B239D74BB6093B9F4028EEF0CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E449B474706F9901C3B8B8C0AB2B4EA0 /* Resources */ = {
+		DDD2A6A1ADC5C7A90E2C1D9ECEEF0F92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,57 +414,57 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		690CEA070374964615B4154B489AEC58 /* Sources */ = {
+		3387B2E60308A02E2823ABCE70DD80F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C77C8C6E722912C73869A5F3D0EB73C /* Pods-JokesApp-dummy.m in Sources */,
+				2AFF036974BCA2B95722765CBD106238 /* Pods-JokesApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECB7151E476CBDCB3C58F16BA295356E /* Sources */ = {
+		E04E3E4854ACEB995FE3EF2967E6EBAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88CD4F7FEB2DF665B5178DA85BBCF46D /* Pods-JokesAppTests-dummy.m in Sources */,
+				3CA2142766C1EE4F7592AEA92C6F7764 /* Pods-JokesApp-JokesAppUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F404099EE851DAA480DCE0D8F3D056C1 /* Sources */ = {
+		F06AA4DBCF10FBD77CE304DDD8D2D1E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE2A6F59A1459AA8E14717DFE1A6C593 /* Pods-JokesApp-JokesAppUITests-dummy.m in Sources */,
+				301BF5351F9E119DABF07E3F129E3D8E /* Pods-JokesAppTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		048DCD8A6A6AB2347ABF043FB1E44B49 /* PBXTargetDependency */ = {
+		27CB6DE49363133263353E840DA25810 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = common;
 			target = 8217FBB9D1218C346C0781D0B8F2BBE8 /* common */;
-			targetProxy = A5CC20D4045D0213FDB8ACDC325F1AB7 /* PBXContainerItemProxy */;
+			targetProxy = 80083E69FE8244BC8E9F46D6FFEBADE3 /* PBXContainerItemProxy */;
 		};
-		947AD29CDAF6924AD299929C94BD57CB /* PBXTargetDependency */ = {
+		731A3EB744726D21040517CAED2A828C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = common;
+			target = 8217FBB9D1218C346C0781D0B8F2BBE8 /* common */;
+			targetProxy = 624A0E59AA2A0FEA029CEA306F1BE85C /* PBXContainerItemProxy */;
+		};
+		A39D20AA079A0461DD415D3CED292B50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JokesApp";
 			target = E80DDCE0F69CF2F5AA0E0142C25F8F35 /* Pods-JokesApp */;
-			targetProxy = 5A3E0F24DF3C28FF1BE3D77640368F04 /* PBXContainerItemProxy */;
-		};
-		CFC9B35B2B488448D7E83CB5B56DC18D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = common;
-			target = 8217FBB9D1218C346C0781D0B8F2BBE8 /* common */;
-			targetProxy = F795D292033D24BE27E6A44C0AE75C7E /* PBXContainerItemProxy */;
+			targetProxy = 5C35E5CCA37612CC1FD9B7C2EF0579E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		068C8A8D4E55EAE73DC1860F5530AF71 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAF4B8F5962ECD9B700FEDD1798A502A /* common.release.xcconfig */;
+			baseConfigurationReference = 5322F4D58F773B8686AB4E3C7D1175E0 /* common.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -479,45 +479,7 @@
 			};
 			name = Release;
 		};
-		0A86F4692BA474A8D6ACF6831AA690B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8469256EDDC39F53B49B53F73C4067F /* Pods-JokesApp-JokesAppUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JokesApp-JokesAppUITests/Pods-JokesApp-JokesAppUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JokesApp-JokesAppUITests/Pods-JokesApp-JokesAppUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1EA41822484295CCA6E442D2565684FB /* Debug */ = {
+		0E7C3243C33635C8D94D4731E63C94BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 723411B8F06E13DA628DCA9BBC50B077 /* Pods-JokesAppTests.debug.xcconfig */;
 			buildSettings = {
@@ -555,7 +517,46 @@
 			};
 			name = Debug;
 		};
-		4FDC6B50A7B378BE4A59EC6C45E15063 /* Release */ = {
+		11581D764948A1AAEE1BB8AA9BB3E952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14F3E0BE1549710890F51EB8800CBDE3 /* Pods-JokesApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JokesApp/Pods-JokesApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JokesApp/Pods-JokesApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		429D210B7DF674600772BBF2A2B9616F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 656FF9BB449B7EEA04C53643815CBBBC /* Pods-JokesApp-JokesAppUITests.release.xcconfig */;
 			buildSettings = {
@@ -593,6 +594,44 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		4D2B00D4262E0F6BF1FBBCB59FF59011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AEBE5C1AF8B78390308215A9533F89A /* Pods-JokesApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JokesApp/Pods-JokesApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JokesApp/Pods-JokesApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -658,6 +697,83 @@
 			};
 			name = Debug;
 		};
+		717C0A5E28ADD212379DECE789526851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 708393D972AFAF28C3EA72D57A8DCD16 /* Pods-JokesAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JokesAppTests/Pods-JokesAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JokesAppTests/Pods-JokesAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		856106E48B2435F6EB75C53832DEE3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8469256EDDC39F53B49B53F73C4067F /* Pods-JokesApp-JokesAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JokesApp-JokesAppUITests/Pods-JokesApp-JokesAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JokesApp-JokesAppUITests/Pods-JokesApp-JokesAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -720,7 +836,7 @@
 		};
 		C508673FFDD7476AF56EAF65A9F757FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9226B674B21145B731FF81DB9707B302 /* common.debug.xcconfig */;
+			baseConfigurationReference = 66CB301C7AFFA80B04FF8C97876B8394 /* common.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -734,130 +850,23 @@
 			};
 			name = Debug;
 		};
-		E9302E336125FE097C27B99AEF1EB766 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 708393D972AFAF28C3EA72D57A8DCD16 /* Pods-JokesAppTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JokesAppTests/Pods-JokesAppTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JokesAppTests/Pods-JokesAppTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		ECFB62E56913B0ED00B640A5A5846786 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14F3E0BE1549710890F51EB8800CBDE3 /* Pods-JokesApp.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JokesApp/Pods-JokesApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JokesApp/Pods-JokesApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FE7F5012DD65FB099F588BA2142C8988 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AEBE5C1AF8B78390308215A9533F89A /* Pods-JokesApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JokesApp/Pods-JokesApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JokesApp/Pods-JokesApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08D506E9900F4E7C35B1F5E9D4DA352C /* Build configuration list for PBXNativeTarget "Pods-JokesApp" */ = {
+		0CD994F8AF4BC87D8EF8DA112923F7C9 /* Build configuration list for PBXNativeTarget "Pods-JokesApp-JokesAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE7F5012DD65FB099F588BA2142C8988 /* Debug */,
-				ECFB62E56913B0ED00B640A5A5846786 /* Release */,
+				856106E48B2435F6EB75C53832DEE3E0 /* Debug */,
+				429D210B7DF674600772BBF2A2B9616F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D5CC9A098DD244066611452EF1CF582 /* Build configuration list for PBXNativeTarget "Pods-JokesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D2B00D4262E0F6BF1FBBCB59FF59011 /* Debug */,
+				11581D764948A1AAEE1BB8AA9BB3E952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -880,20 +889,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CFE6CFF066E2AB0F63C86E8BB75FE342 /* Build configuration list for PBXNativeTarget "Pods-JokesApp-JokesAppUITests" */ = {
+		A4E6ED1E049DD76E34F5B81B6948CB67 /* Build configuration list for PBXNativeTarget "Pods-JokesAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A86F4692BA474A8D6ACF6831AA690B6 /* Debug */,
-				4FDC6B50A7B378BE4A59EC6C45E15063 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FC5FAC3702EEF9FC353DA7892C2A148A /* Build configuration list for PBXNativeTarget "Pods-JokesAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1EA41822484295CCA6E442D2565684FB /* Debug */,
-				E9302E336125FE097C27B99AEF1EB766 /* Release */,
+				0E7C3243C33635C8D94D4731E63C94BF /* Debug */,
+				717C0A5E28ADD212379DECE789526851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
