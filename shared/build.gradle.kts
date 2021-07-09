@@ -4,7 +4,7 @@ plugins {
     id("com.android.library")
     kotlin("multiplatform")
     kotlin("native.cocoapods")
-    kotlin("plugin.serialization") version "1.5.20"
+    kotlin("plugin.serialization") version "1.5.10"
     id("com.squareup.sqldelight")
 
 }

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion(29)
+    compileSdk = 30
     defaultConfig {
-        applicationId ="com.kurt.jokes"
-        minSdkVersion(21)
-        targetSdkVersion(29)
+        applicationId ="com.kuuuurt.jokes"
+        minSdk = 21
+        targetSdk = 30
         versionCode = 1
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -26,9 +26,16 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.0.0-rc01"
+    }
+
     kotlinOptions {
-        val options = this as org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
-        options.jvmTarget = "1.8"
+        jvmTarget = "1.8"
     }
 
     packagingOptions {
@@ -43,32 +50,25 @@ dependencies {
     val coroutines: String by project
     val navigationVersion = "2.2.0-rc04"
 
+    // Compose
+    val compose = "1.0.0-rc01"
+    implementation("androidx.compose.ui:ui:$compose")
+    implementation("androidx.compose.ui:ui-tooling:$compose")
+    implementation("androidx.compose.foundation:foundation:$compose")
+    implementation("androidx.compose.material:material:$compose")
+
+    // Lifecycle
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07")
 
     // Kotlin
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin")
 
-    // Navigation
-    implementation("androidx.navigation:navigation-fragment-ktx:$navigationVersion")
-    implementation("androidx.navigation:navigation-ui-ktx:$navigationVersion")
-
-    // LiveData and ViewModel
-    val lifecycleVersion = "2.2.0"
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion")
-
     // AndroidX
-    val FRAGMENT = "1.3.0-alpha07"
-    implementation("androidx.appcompat:appcompat:1.1.0-rc01")
-    implementation("androidx.core:core-ktx:1.0.2")
-    implementation("androidx.activity:activity-ktx:1.0.0-rc01")
-    implementation("androidx.fragment:fragment-ktx:$FRAGMENT")
-    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
-
-    // Material Components
-    implementation("com.google.android.material:material:1.1.0-alpha09")
-
-    // ConstraintLayout
-    implementation("androidx.constraintlayout:constraintlayout:1.1.3")
+    implementation("androidx.appcompat:appcompat:1.4.0-alpha03")
+    implementation("androidx.activity:activity-compose:1.3.0-rc01")
+    implementation("androidx.activity:activity-ktx:1.3.0-rc01")
+    implementation("androidx.core:core-ktx:1.6.0")
+    implementation("com.google.android.material:material:1.3.0")
 
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines")
@@ -80,7 +80,5 @@ dependencies {
     androidTestImplementation("androidx.test:rules:${ANDROIDX_TEST}")
     androidTestImplementation("androidx.test.ext:junit-ktx:1.1.2")
     androidTestImplementation("androidx.test.espresso:espresso-core:$ESPRESSO")
-    androidTestImplementation("androidx.fragment:fragment-testing:${FRAGMENT}")
-    androidTestImplementation("androidx.navigation:navigation-testing:$navigationVersion")
     androidTestImplementation("com.schibsted.spain:barista:3.6.0")
 }
