@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		0BF61F917C389A38B94C302B /* Pods_JokesApp_JokesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2C966E8E5EF5C40FD2D5B7 /* Pods_JokesApp_JokesAppUITests.framework */; };
 		611FC29A57610424D85037B1 /* Pods_JokesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64893F03D4A215C2FF1C9644 /* Pods_JokesApp.framework */; };
+		750CAE582698BAAF00C9B191 /* JokesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CAE572698BAAF00C9B191 /* JokesView.swift */; };
+		750CAE682698BCEC00C9B191 /* JokesViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CAE672698BCEC00C9B191 /* JokesViewModelWrapper.swift */; };
+		750CAE6E2698BF7200C9B191 /* Ktor_ioCloseable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CAE6D2698BF7200C9B191 /* Ktor_ioCloseable+.swift */; };
+		750CAE7A2698BFB700C9B191 /* ViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CAE792698BFB700C9B191 /* ViewModelWrapper.swift */; };
+		750CAEE62698C7C900C9B191 /* JokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CAEE52698C7C900C9B191 /* JokesApp.swift */; };
 		85ED90DD61381871878B5FD8 /* Pods_JokesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E9E5D234D7A8F30473FE34 /* Pods_JokesAppTests.framework */; };
 		E5CAC8432473E2A50043D8A6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E52A09C72323E22D000AA086 /* libsqlite3.tbd */; };
-		E8081AD9230C32BD00F58819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8081AD8230C32BD00F58819 /* AppDelegate.swift */; };
-		E8081ADB230C32BD00F58819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8081ADA230C32BD00F58819 /* ViewController.swift */; };
-		E8081ADE230C32BD00F58819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8081ADC230C32BD00F58819 /* Main.storyboard */; };
 		E8081AE0230C32BE00F58819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8081ADF230C32BE00F58819 /* Assets.xcassets */; };
-		E8081AE3230C32BE00F58819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8081AE1230C32BE00F58819 /* LaunchScreen.storyboard */; };
 		E8081AEE230C32BE00F58819 /* mppexampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8081AED230C32BE00F58819 /* mppexampleTests.swift */; };
 		E8081AF9230C32BE00F58819 /* mppexampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8081AF8230C32BE00F58819 /* mppexampleUITests.swift */; };
-		E81CF7802314D91300F4076A /* JokesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CF77F2314D91300F4076A /* JokesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +47,15 @@
 		6441EF089F9770161A1638C1 /* Pods-JokesApp-JokesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JokesApp-JokesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-JokesApp-JokesAppUITests/Pods-JokesApp-JokesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		64893F03D4A215C2FF1C9644 /* Pods_JokesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JokesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC2D464EC6F37B4BD4901B2 /* Pods-JokesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JokesApp.debug.xcconfig"; path = "Target Support Files/Pods-JokesApp/Pods-JokesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		750CAE572698BAAF00C9B191 /* JokesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesView.swift; sourceTree = "<group>"; };
+		750CAE672698BCEC00C9B191 /* JokesViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewModelWrapper.swift; sourceTree = "<group>"; };
+		750CAE6D2698BF7200C9B191 /* Ktor_ioCloseable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ktor_ioCloseable+.swift"; sourceTree = "<group>"; };
+		750CAE792698BFB700C9B191 /* ViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelWrapper.swift; sourceTree = "<group>"; };
+		750CAEE52698C7C900C9B191 /* JokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesApp.swift; sourceTree = "<group>"; };
 		D2F9FFEADC09A5F693217D72 /* Pods-JokesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JokesAppTests.release.xcconfig"; path = "Target Support Files/Pods-JokesAppTests/Pods-JokesAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E52A09C72323E22D000AA086 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E8081AD5230C32BD00F58819 /* JokesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8081AD8230C32BD00F58819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8081ADA230C32BD00F58819 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E8081ADD230C32BD00F58819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8081ADF230C32BE00F58819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8081AE2230C32BE00F58819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8081AE4230C32BE00F58819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8081AE9230C32BE00F58819 /* JokesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8081AED230C32BE00F58819 /* mppexampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mppexampleTests.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		E8081AF4230C32BE00F58819 /* JokesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8081AF8230C32BE00F58819 /* mppexampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mppexampleUITests.swift; sourceTree = "<group>"; };
 		E8081AFA230C32BE00F58819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E81CF77F2314D91300F4076A /* JokesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +94,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		750CAE6C2698BF6600C9B191 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				750CAE6D2698BF7200C9B191 /* Ktor_ioCloseable+.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		750CAE782698BFAD00C9B191 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				750CAE792698BFB700C9B191 /* ViewModelWrapper.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		81E8F34CB1229463C3D615B1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,13 +159,13 @@
 		E8081AD7230C32BD00F58819 /* JokesApp */ = {
 			isa = PBXGroup;
 			children = (
-				E8081AD8230C32BD00F58819 /* AppDelegate.swift */,
-				E8081ADA230C32BD00F58819 /* ViewController.swift */,
-				E81CF77F2314D91300F4076A /* JokesTableViewCell.swift */,
-				E8081ADC230C32BD00F58819 /* Main.storyboard */,
+				750CAE782698BFAD00C9B191 /* utils */,
+				750CAE6C2698BF6600C9B191 /* extensions */,
 				E8081ADF230C32BE00F58819 /* Assets.xcassets */,
-				E8081AE1230C32BE00F58819 /* LaunchScreen.storyboard */,
 				E8081AE4230C32BE00F58819 /* Info.plist */,
+				750CAE572698BAAF00C9B191 /* JokesView.swift */,
+				750CAE672698BCEC00C9B191 /* JokesViewModelWrapper.swift */,
+				750CAEE52698C7C900C9B191 /* JokesApp.swift */,
 			);
 			path = JokesApp;
 			sourceTree = "<group>";
@@ -279,9 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8081AE3230C32BE00F58819 /* LaunchScreen.storyboard in Resources */,
 				E8081AE0230C32BE00F58819 /* Assets.xcassets in Resources */,
-				E8081ADE230C32BD00F58819 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,9 +389,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8081ADB230C32BD00F58819 /* ViewController.swift in Sources */,
-				E8081AD9230C32BD00F58819 /* AppDelegate.swift in Sources */,
-				E81CF7802314D91300F4076A /* JokesTableViewCell.swift in Sources */,
+				750CAE582698BAAF00C9B191 /* JokesView.swift in Sources */,
+				750CAE6E2698BF7200C9B191 /* Ktor_ioCloseable+.swift in Sources */,
+				750CAE7A2698BFB700C9B191 /* ViewModelWrapper.swift in Sources */,
+				750CAE682698BCEC00C9B191 /* JokesViewModelWrapper.swift in Sources */,
+				750CAEE62698C7C900C9B191 /* JokesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,25 +427,6 @@
 			targetProxy = E8081AF5230C32BE00F58819 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E8081ADC230C32BD00F58819 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8081ADD230C32BD00F58819 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E8081AE1230C32BE00F58819 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8081AE2230C32BE00F58819 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E8081AFB230C32BE00F58819 /* Debug */ = {
@@ -483,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -539,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "${inherited}";
@@ -562,6 +559,7 @@
 					"${inherited}",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/JokesApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,6 +584,7 @@
 					"${inherited}",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/JokesApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
