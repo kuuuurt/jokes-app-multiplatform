@@ -7,7 +7,6 @@ import com.kurt.jokes.mobile.data.local.JokesLocalSource
 import com.kurt.jokes.mobile.data.remote.JokesRemoteSource
 import com.kurt.jokes.mobile.domain.entities.Joke
 import com.kurt.jokes.mobile.domain.repositories.JokesRepository
-import com.kurt.jokes.mobile.domain.usecases.GetJokes
 import io.ktor.client.*
 import io.ktor.client.features.json.*
 import io.ktor.client.features.json.serializer.*
@@ -27,11 +26,8 @@ object ServiceLocator {
     }
     private val jokesLocalSource = JokesLocalSource(JokesDatabase(JokesDatabaseDriver.getDriver()))
     private val jokesRemoteSource = JokesRemoteSource(client)
-    private val jokesRepository: JokesRepository = RealJokesRepository(
+    val jokesRepository: JokesRepository = RealJokesRepository(
         jokesRemoteSource,
         jokesLocalSource
     )
-
-    // Domain
-    val getJokes = GetJokes(jokesRepository)
 }

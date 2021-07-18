@@ -1,6 +1,5 @@
 package com.kurt.jokes.mobile
 
-import com.kurt.jokes.mobile.domain.usecases.GetJokes
 import com.kurt.jokes.mobile.presentation.base.mainDispatcher
 import com.kurt.jokes.mobile.presentation.features.jokes.JokesViewModel
 import kotlinx.coroutines.flow.first
@@ -17,7 +16,7 @@ class JokesViewModelTest : CommonTest() {
     }
 
     private fun setup() {
-        viewModel = JokesViewModel(GetJokes(FakeJokesRepository()))
+        viewModel = JokesViewModel(FakeJokesRepository())
     }
 
     @Test

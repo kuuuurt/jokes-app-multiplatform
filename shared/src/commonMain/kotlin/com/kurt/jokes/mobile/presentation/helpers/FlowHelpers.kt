@@ -12,8 +12,8 @@ import kotlinx.coroutines.flow.*
  * @since 01/01/2020
  */
 
-fun <T> Flow<T>.asCommonFlow(): CFlow<T> = CFlow(this)
-class CFlow<T>(private val origin: Flow<T>) : Flow<T> by origin {
+fun <T> Flow<T>.asCommonFlow(): CommonFlow<T> = CommonFlow(this)
+class CommonFlow<T>(private val origin: Flow<T>) : Flow<T> by origin {
     fun watch(block: (T) -> Unit): Closeable {
         val job = Job()
 
