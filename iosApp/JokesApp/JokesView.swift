@@ -19,10 +19,7 @@ struct JokesView: View {
       } else {
         List {
           ForEach(viewModel.jokes, id: \.id) { joke in
-            VStack(alignment: .leading) {
-              Text(joke.setup).fontWeight(.bold)
-              Text(joke.punchline)
-            }.padding(8)
+            JokeItem(joke: joke)
           }
         }
       }
@@ -30,6 +27,25 @@ struct JokesView: View {
       viewModel.onStart()
     }
   }
+}
+
+struct JokeItem: View {
+  var joke: Joke
+  
+  @State private var isPunchlineVisible = false
+  
+  var body: some View {
+    VStack(alignment: .leading) {
+      Text(joke.setup).fontWeight(.bold)
+      if (isPunchlineVisible) {
+        Text(joke.punchline)
+      }
+    }.padding(8)
+    .onTapGesture {
+      isPunchlineVisible = !isPunchlineVisible
+    }
+  }
+
 }
 
 struct JokesView_Previews: PreviewProvider {
